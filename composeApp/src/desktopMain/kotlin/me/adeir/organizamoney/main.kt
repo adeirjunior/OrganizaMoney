@@ -1,0 +1,13 @@
+package me.adeir.organizamoney
+
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+fun main() = application {
+    Window(
+        onCloseRequest = ::exitApplication,
+        title = "Organiza Money",
+    ) {
+        App()
+    }
+}
