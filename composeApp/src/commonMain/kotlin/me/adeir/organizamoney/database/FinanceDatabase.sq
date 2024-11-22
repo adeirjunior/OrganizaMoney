@@ -1,0 +1,13 @@
+CREATE TABLE Transaction (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    description TEXT NOT NULL,
+    amount REAL NOT NULL,
+    type TEXT NOT NULL, -- "INCOME" or "EXPENSE"
+    date TEXT NOT NULL
+);
+
+CREATE TABLE Budget (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category TEXT NOT NULL,
+    limit REAL NOT NULL
+);
